@@ -1,10 +1,30 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { getRecipes, getRecipesById } from './services/api'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [recipes, setRecipes] = useState([]);
+  
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await getRecipes();
+        setRecipes(data);
+        console.log("data: ", data)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
+  }, []);
+
+  useEffect( () => {
+     console.log("recipes: ", recipes)
+  }
+  ), [recipes];
 
   return (
     <>

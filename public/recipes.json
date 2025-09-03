@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "ensalada de cuscús caliente",
+        "category": ["ensalada","ligero","saludable"],
+        "rations": 2,
+        "cost": 1,
+        "image": "../src/assets/boloñesa.jpg",
+        "instructions": [
+            "poner el agua a calentar en una olla junto con mantequilla y sal", 
+            "cuando hierva, añadir cuscús repartido, tapar y quitar del fuego. Reposar 10 minutos tapado. Cuando esté, destapar y remover con cuidado de no aplastar los granos",
+            "picar tomate, pepino y cebolleta en cubos pequeños. Añadir al bowl",
+            "picar las setas. Picar los ajos muy fino",
+            "sofreir las setas 5 minutos, después agregar el ajo picado. Cuando esté ligeramente cocinado, añadimos al bowl",
+            "picar el queso feta y añadir al bowl",
+            "añadir el cuscús al bowl",
+            "preparar el aliño con sal, aceite de oliva, limón exprimido, pimienta negra y eneldo. Añadir al bowl",
+            "remover y servir"
+        ],
+        "ingredients": [
+            {"ingredient": "cuscus",
+            "quantity": 1,
+            "measure": "ud"
+        },
+        {"ingredient": "agua",
+            "quantity": 1,
+            "measure": "ud"
+        },
+        {"ingredient": "mantequilla",
+            "quantity": 1,
+            "measure": "cucharada"
+        },
+        {"ingredient": "tomate",
+            "quantity": 1,
+            "measure": "ud"
+        },
+        {"ingredient": "pepino",
+            "quantity": 1,
+            "measure": "ud"
+        },
+        {"ingredient": "cebolleta",
+            "quantity": 0.5,
+            "measure": "ud"
+        },
+        {"ingredient": "setas",
+            "quantity": 120,
+            "measure": "gr"
+        },
+        {"ingredient": "ajo",
+            "quantity": 2,
+            "measure": "uds"
+        },
+        {"ingredient": "queso feta",
+            "quantity": 80,
+            "measure": "gr"
+        },
+        {"ingredient": "limon",
+            "quantity": 1,
+            "measure": "ud"
+        }
+        ],
+        "prepTime": "20 minutos",
+        "cookTime": "30 minutos"
+    },
+    {
+        "id": 2,
+        "title": "salsa boloñesa",
+        "category": "salsa",
+        "rations": 6,
+        "cost": 1,
+        "image": "../src/assets/boloñesa.jpg",
+        "instructions": [
+            "sofreir carne picada hasta dorar y retirar",
+            "cortar las verduras finas",
+            "sofreir las verduras en la misma sartén", 
+            "añadir pasta de tomate y canto de parmesano",
+            "añadir vino y agua",
+            "salpimentar al gusto",
+            "dejar reducir hasta que esté con el espesor deseado"
+        ],
+        "ingredients": [
+            {"ingredient": "apio",
+            "quantity": 1,
+            "measure": "ud"
+            },
+            {"ingredient": "zanahoria",
+                "quantity": 2,
+                "measure": "uds"
+            },
+            {"ingredient": "cebolla",
+            "quantity": 1,
+            "measure": "ud"
+        },
+            {"ingredient": "tomate triturado",
+            "quantity": 800,
+            "measure": "gr"
+        },
+        {"ingredient": "vino tinto",
+            "quantity": 1,
+            "measure": "vaso"
+        },
+        {"ingredient": "agua",
+            "quantity": 1,
+            "measure": "vaso"
+        },
+        {"ingredient": "carne picada",
+            "quantity": 450,
+            "measure": "gr"
+        },
+        {"ingredient": "canto de queso parmesano",
+            "quantity": 1,
+            "measure": "ud"
+        },
+        {"ingredient": "pasta de tomate concentrado",
+            "quantity": 1,
+            "measure": "cucharadita"
+        }
+        ],
+        "prepTime": "15 minutos",
+        "cookTime": "2 horas"
+    }
+]
