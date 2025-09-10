@@ -32,17 +32,19 @@ function RecipeCard() {
             <img
             className='image'
             src={cardImage}
-           /*  width={100}
-            height={80} */
             />
             </div>
             <div className="card-footer">
             <h1 className="title">Título</h1>
             <div className='info-card'>
-                <p>Categorías:</p>
-                <p>Tiempo de preparación:</p>
-                <p>Coste:</p>
-                <p>Raciones:</p>
+              <div className="first-column">
+                <p className="category">Categorías:</p>
+                <p className="cooktime">Preparación:</p>
+                </div>
+                <div className="second-column">
+                <p className="cost">Coste:</p>
+                <p className="plates">Raciones:</p>
+                </div>
             </div>
             </div>
         </div>
