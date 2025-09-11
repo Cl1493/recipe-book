@@ -23,9 +23,12 @@ function Home() {
          console.log("recipes: ", recipes)
       }
       ), [recipes];
+
     return (
     <div className="body" >
-            <RecipeCard/>
+      {recipes.map((recipe, index) => (
+            <RecipeCard key={index} recipes={recipe}/>
+      ))}
     </div>
     )
 }

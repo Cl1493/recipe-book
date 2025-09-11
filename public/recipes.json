@@ -65,9 +65,9 @@
     {
         "id": 2,
         "title": "salsa boloñesa",
-        "category": "salsa",
+        "category": ["salsa"],
         "rations": 6,
-        "cost": 1,
+        "cost": 2,
         "image": "../src/assets/bolonesa.jpg",
         "instructions": [
             "sofreir carne picada hasta dorar y retirar",
