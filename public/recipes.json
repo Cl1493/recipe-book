@@ -5,7 +5,7 @@
         "category": ["ensalada","ligero","saludable"],
         "rations": 2,
         "cost": 1,
-        "image": "../src/assets/boloñesa.jpg",
+        "image": "../src/assets/bolonesa.jpg",
         "instructions": [
             "poner el agua a calentar en una olla junto con mantequilla y sal", 
             "cuando hierva, añadir cuscús repartido, tapar y quitar del fuego. Reposar 10 minutos tapado. Cuando esté, destapar y remover con cuidado de no aplastar los granos",
@@ -65,10 +65,10 @@
     {
         "id": 2,
         "title": "salsa boloñesa",
-        "category": "salsa",
+        "category": ["salsa"],
         "rations": 6,
-        "cost": 1,
-        "image": "../src/assets/boloñesa.jpg",
+        "cost": 2,
+        "image": "../src/assets/bolonesa.jpg",
         "instructions": [
             "sofreir carne picada hasta dorar y retirar",
             "cortar las verduras finas",
