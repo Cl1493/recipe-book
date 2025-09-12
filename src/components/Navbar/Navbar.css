@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #FFD09B;
+    display: flex; 
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+}
+.navbar-title{
+   /*  color: #FFECC8; */
+   margin-left: 40px;
+   color:#FFF7D1;
+}
+.buttons{ 
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+    
+}
+.add-recipe-button, .favorite-button{
+    margin: 5px;
+    height: 35px;;
+    background-color: #FFB0B0;
+    border-radius: 1cap;
+    border-color: #f89c9c;
+    border-width: 1px;
+    padding: 4px;
+}
+a{
+    text-decoration: none;
+    color:#FFF7D1;
+    font-weight: 700;
+}
