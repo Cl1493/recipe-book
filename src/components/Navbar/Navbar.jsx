@@ -1,30 +1,28 @@
 import './Navbar.css';
 import heart from '../../assets/heart.svg';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 
     return (
         <header className='navbar'>
-
             <div>
-                <h1 className='navbar-title'>Recetario</h1>
+                <h1 className='navbar-title'>
+                     <Link to='/'>Recetario</Link>
+                </h1>
             </div>
-
            <nav className='buttons'>
-
             <button className='add-recipe-button'>
-               <a href='/'>Añadir receta</a> 
+               <Link to='/add-recipe'> Añadir receta</Link> 
             </button>
-
-            <button className='favorite-button'>
-                <a href='/'> 
+            {location.pathname !== '/' &&  <button className='favorite-button'>
+                 <Link to='/favorites'>
                     <img src={heart} width={20} height={20}/>
-                </a>
-           </button>
-
+                 </Link>
+           </button>}
+           
            </nav>
-       
-        </header>
+        </header>  
     )
 }
 export default Navbar;
