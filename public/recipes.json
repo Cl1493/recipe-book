@@ -17,6 +17,7 @@
             "preparar el aliño con sal, aceite de oliva, limón exprimido, pimienta negra y eneldo. Añadir al bowl",
             "remover y servir"
         ],
+        "description": "Esta receta es la salsa para muchas otras recetas, como lasaña, pasta, o incluso poniendo carne magra en vez de carne picada puede seer una carne en salsa. ¡Pruebala!",
         "ingredients": [
             {"ingredient": "cuscus",
             "quantity": 1,
@@ -78,6 +79,7 @@
             "salpimentar al gusto",
             "dejar reducir hasta que esté con el espesor deseado"
         ],
+        "description": "Esta receta es la salsa para muchas otras recetas, como lasaña, pasta, o incluso poniendo carne magra en vez de carne picada puede seer una carne en salsa. ¡Pruebala! Naah es broma, esta es una ensalada caliente para que no sea la mitica de lechuga/tomate/cebolla/atún.",
         "ingredients": [
             {"ingredient": "apio",
             "quantity": 1,
