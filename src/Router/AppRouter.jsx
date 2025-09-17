@@ -7,7 +7,7 @@ export const AppRouter = () => {
 
     <Routes>
       <Route path='/' element={<Home/>}></Route>
-      <Route path='/detail' element={<RecipeDetail/>}></Route>
+      <Route path='/recipes/:recipeId' element={<RecipeDetail/>}></Route>
       <Route path='/add-recipe' element={<h1>Añadir receta</h1>}></Route>
       <Route path='/favorites' element={<h1>Favoritos</h1>}></Route>
       <Route path='/*' element={<Navigate to='/'/>} />

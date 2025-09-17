@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 
 
 function RecipeCard({recipes}) {
+   /*  const {recipeId} = useParams(); */
     return (
         <div className="card">
-            <Link to='/detail'>
+            {/* <Link to='/recipes/detail'> */}
+            <Link to={`recipes/${recipes.id}`}>
             <div className='image-space'>
             <img
             className='image'
