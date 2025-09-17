@@ -1,10 +1,14 @@
 import './RecipeCard.css';
 import { capitalizeFirstLetter, cutArray, cutTitle, formatCost } from "../../utils/utils";
+import { Link } from 'react-router-dom';
 
 
 function RecipeCard({recipes}) {
+   /*  const {recipeId} = useParams(); */
     return (
         <div className="card">
+            {/* <Link to='/recipes/detail'> */}
+            <Link to={`recipes/${recipes.id}`}>
             <div className='image-space'>
             <img
             className='image'
@@ -24,6 +28,7 @@ function RecipeCard({recipes}) {
                 </div>
             </div>
             </div>
+            </Link>
         </div>
     )
 }
