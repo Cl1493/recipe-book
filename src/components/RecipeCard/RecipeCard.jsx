@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function RecipeCard({recipes}) {
-   /*  const {recipeId} = useParams(); */
+  
     return (
         <div className="card">
             {/* <Link to='/recipes/detail'> */}
