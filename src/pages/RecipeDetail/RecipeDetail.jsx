@@ -38,7 +38,7 @@ export const RecipeDetail = () => {
                 <p>Coste: {recipe.rations}</p>
                 <ul>Ingredientes:
                     {recipe.ingredients.map((ingre, index) => (
-                        <li key={index}>{ingre.ingredient} - {ingre.quantity}{ingre.measure}</li>
+                        <li key={index}>{ingre.ingredient} - {ingre.quantity} {ingre.measure}</li>
                     ))}  
                 </ul>
             </div>
