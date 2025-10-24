@@ -1,8 +1,10 @@
-import { useEffect, useState } from "react";
+
+import React, { useEffect, useState } from "react";
 import { getRecipes } from "../../services/api";
-import RecipeCard from "../../components/RecipeCard/RecipeCard.jsx";
 import './Home.css'
-import Navbar from "../../components/Navbar/Navbar.jsx";
+import Navbar from "../../components/Navbar/Navbar";
+import RecipeCard from "../../components/RecipeCard/RecipeCard";
+
 
 function Home() {
     const [recipes, setRecipes] = useState([]);
