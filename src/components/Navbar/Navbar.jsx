@@ -12,9 +12,11 @@ function Navbar() {
                 </h1>
             </div>
            <nav className='buttons'>
+            {location.pathname !== '/add-recipe' && 
             <button className='add-recipe-button'>
                <Link to='/add-recipe'> Añadir receta</Link> 
             </button>
+            }
             {location.pathname !== '/' &&  <button className='favorite-button'>
                  <Link to='/favorites'>
                     <img src={heart} width={20} height={20}/>

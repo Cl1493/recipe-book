@@ -22,16 +22,15 @@
     border: 1px solid #FFB0B0; 
 }
 p{
-    font-size: 16px;
+      font-size: 16px;
     color:#FFB0B0;
-    margin-left: 10px;
-    font-weight: 500;
+
 } 
 ul{
     font-size: 16px;
     color:#FFB0B0;
-      column-count: 2;
-  column-gap: 50px;
+   /*    column-count: 2;
+  column-gap: 50px; */
 }
 li{
 font-size: 16px;
