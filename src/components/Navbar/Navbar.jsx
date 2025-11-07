@@ -13,15 +13,19 @@ function Navbar() {
             </div>
            <nav className='buttons'>
             {location.pathname !== '/add-recipe' && 
+            <Link to='/add-recipe'> 
             <button className='add-recipe-button'>
-               <Link to='/add-recipe'> Añadir receta</Link> 
+               Añadir receta
             </button>
+            </Link> 
             }
-            {location.pathname !== '/' &&  <button className='favorite-button'>
-                 <Link to='/favorites'>
+            {location.pathname !== '/' &&  
+            <Link to='/favorites'>
+            <button className='favorite-button'>
                     <img src={heart} width={20} height={20}/>
-                 </Link>
-           </button>}
+           </button>
+           </Link>}
+           
            
            </nav>
         </header>  

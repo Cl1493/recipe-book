@@ -28,7 +28,7 @@ export const RecipeDetail = () => {
        {!recipe ? (
             <p>Receta no encontrada</p>
         ) : ( 
-            <>
+            <div className="recipe-detail-container">
             <div className="recipe-title">
                  <h1>{capitalizeFirstLetter(recipe.title)}</h1>
             </div>
@@ -59,13 +59,13 @@ export const RecipeDetail = () => {
                </div>
             <div className="recipe-instructions">
                 <p>Instrucciones:</p>
-                <ul>
+                <ol>
                     {recipe.instructions.map((step, index) => (
                         <li key={index}>{capitalizeFirstLetter(step)}</li>
                     ))}  
-                </ul>
+                </ol>
             </div>
-           </>
+           </div>
        )}
        
         </>

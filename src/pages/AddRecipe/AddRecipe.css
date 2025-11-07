@@ -1,3 +1,7 @@
+.recipe-detail-container{
+    margin-left: 12%;
+    margin-right: 12%;
+}
 .recipe-title{
     font-size: 20px;
     font-weight: bold;
@@ -21,7 +25,7 @@
     margin-right: 20px;
     border: 1px solid #FFB0B0; 
 }
-p{
+label{
       font-size: 16px;
     color:#FFB0B0;
 

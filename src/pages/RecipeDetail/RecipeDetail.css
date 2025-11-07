@@ -1,3 +1,7 @@
+.recipe-detail-container{
+    margin-left: 12%;
+    margin-right: 12%;
+}
 .recipe-title{
     font-size: 20px;
     font-weight: bold;
