@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { useEffect, useState } from "react";
 import { getRecipesById } from "../../services/api";
 import './RecipeDetail.css';
+import { capitalizeFirstLetter, formatCost } from "../../utils/utils";
 
 export const RecipeDetail = () => {
     const {recipeId} = useParams();
@@ -29,25 +30,26 @@ export const RecipeDetail = () => {
         ) : ( 
             <>
             <div className="recipe-title">
-                 <h1>{recipe.title}</h1>
+                 <h1>{capitalizeFirstLetter(recipe.title)}</h1>
             </div>
             <div className="recipe-container">
                 <div className="recipe-info">
-                    <p>Categorías: {recipe.category}</p>
+                    <p>Categorías: {recipe.category.join(", ")}</p>
                     <p>Tiempo de preparación: {recipe.prepTime}</p>
                     <p>Tiempo de cocinado: {recipe.cookTime}</p>
-                    <p>Coste: {recipe.cost}</p>
-                    <p>Coste: {recipe.rations}</p>
-                    <ul>Ingredientes:
+                    <p>Coste: {formatCost(recipe.cost) }</p>
+                    <p>Nº de raciones: {recipe.rations}</p>
+                    <p>Ingredientes:</p>
+                    <ul>
                         {recipe.ingredients.map((ingre, index) => (
-                            <li key={index}>{ingre.ingredient} - {ingre.quantity} {ingre.measure}</li>
+                            <li key={index}>{capitalizeFirstLetter(ingre.ingredient)} - {ingre.quantity} {ingre.measure}</li>
                         ))}  
                     </ul>
                 </div>
                
                 <div className="recipe-image-description">
-                    <div className="recipe-image">
-                        <img src={recipe.image}/>
+                    <div className="recipe-image-div">
+                        <img className="recipe-image" src={recipe.image}/>
                     </div>
                 
                     <div className="recipe-description">
@@ -56,9 +58,10 @@ export const RecipeDetail = () => {
                </div>
                </div>
             <div className="recipe-instructions">
-                <ul>Instrucciones:
+                <p>Instrucciones:</p>
+                <ul>
                     {recipe.instructions.map((step, index) => (
-                        <li key={index}>{step}</li>
+                        <li key={index}>{capitalizeFirstLetter(step)}</li>
                     ))}  
                 </ul>
             </div>
